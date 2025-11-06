@@ -1,0 +1,7 @@
+strip flags
+count = 0
+for bit in stream:
+  if bit == 1: count += 1 else: count = 0
+  if count == 5: skip next bit if it's 0 and reset count
+  else: output bit
+verify FCS
