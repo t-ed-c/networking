@@ -1,0 +1,6 @@
+count = 0
+for bit in data:
+  output bit
+  if bit == 1: count += 1 else: count = 0
+  if count == 5: output 0; count = 0
+wrap with flags 01111110 ... 01111110
